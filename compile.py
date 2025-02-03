@@ -44,7 +44,9 @@ for dir in dirs:
 	<div class="site">
 		<div class="nav">
 			<h1><a href="/">{name}</a></h1>
+            <div class="navlinks">
             {navDiv}
+            </div>
 		</div>
         <div class="content">
             <div class="header" style="background-image:url({bg})"></div>
@@ -88,7 +90,9 @@ for dir in subs.keys():
 	<div class="site">
 		<div class="nav">
 			<h1><a href="/">{name}</a></h1>
+            <div class="navlinks">
             {navDiv}
+            </div>
 		</div>
 		<div class="banner" id="banner" data-bg="{featured[2]}">
 			<div class="caption">
@@ -133,7 +137,9 @@ with open('index.html', 'w') as homepage:
 	<div class="site">
 		<div class="nav">
 			<h1><a href="/">{name}</a></h1>
-			{navDiv}
+			<div class="navlinks">
+            {navDiv}
+            </div>
 		</div>
 		<div class="banner" id="banner" data-bg="assets/landing.png">
 			<div class="caption">
